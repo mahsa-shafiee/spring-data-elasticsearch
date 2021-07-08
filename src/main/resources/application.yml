@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: elasticsearch-example
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+  elasticsearch:
+    rest:
+      uris: localhost:9200
+      connection-timeout: 1s
+      read-timeout: 1m
+      password:
+      username:
+logstash:
+  host: localhost
+  port: 5000
